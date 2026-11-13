@@ -1,0 +1,16 @@
+{
+  "name": "orientn",
+  "version": "1.0.0",
+  "description": "Plateforme Web d'Orientation Universitaire Intelligente (Tunisie) - MERN + Python RAG",
+  "scripts": {
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "dev:ai": "cd rag-service && .\\venv\\Scripts\\python.exe main.py",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue,green\" \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:all": "concurrently -n \"SERVER,CLIENT,RAG_AI\" -c \"blue,green,magenta\" \"npm run dev:server\" \"npm run dev:client\" \"npm run dev:ai\"",
+    "seed": "npm --prefix server run seed"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

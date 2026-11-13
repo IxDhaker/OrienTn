@@ -1,0 +1,14 @@
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: orientn_mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: orientn
+    volumes:
+      - orientn_mongodb_data:/data/db
+
+volumes:
+  orientn_mongodb_data:

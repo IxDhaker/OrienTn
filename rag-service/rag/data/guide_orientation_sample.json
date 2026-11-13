@@ -1,0 +1,50 @@
+[
+  {
+    "domain": "Informatique & Génie Logiciel",
+    "faculties": ["INSAT", "ISI", "FST", "ENIS", "ENISO"],
+    "semester1_subjects": [
+      "Algorithmique et structures de données avancées (C / Java)",
+      "Architecture des ordinateurs et assembleur",
+      "Bases de données relationnelles et SQL (Merise)",
+      "Mathématiques appliquées (Analyse, Algèbre linéaire, Logique mathématique)",
+      "Technologies Web fondamentales (HTML5, CSS3, JavaScript ES6+)"
+    ],
+    "summer_prep_recommendations": {
+      "week_1_2": "Maîtriser la programmation orientée objet (POO) avec Java ou C++, réviser les structures de données (tableaux dynamiques, listes chaînées).",
+      "week_3_4": "Conception de bases de données relationnelles (MCD/MLD) et écriture de requêtes SQL (Jointures, Groupes, Triggers).",
+      "week_5_6": "Prise en main de Git/GitHub, découverte des bases du développement web moderne (React ou Express) et manipulation de Linux (Ubuntu/WSL)."
+    }
+  },
+  {
+    "domain": "Médecine & Pharmacie & Santé",
+    "faculties": ["Faculté de Médecine de Tunis", "Faculté de Médecine de Sousse", "Faculté de Médecine de Monastir", "Faculté de Médecine de Sfax"],
+    "semester1_subjects": [
+      "Anatomie générale et ostéologie",
+      "Biologie cellulaire et moléculaire",
+      "Embryologie et histologie",
+      "Biochimie structurale",
+      "Biophysique et imagerie médicale"
+    ],
+    "summer_prep_recommendations": {
+      "week_1_2": "Familiarisation avec le vocabulaire médical et les racines gréco-latines, initiation à l'ostéologie.",
+      "week_3_4": "Révision approfondie de la biologie cellulaire (cycles, membranes, ADN/ARN) et des biomolécules.",
+      "week_5_6": "Mise en place d'une routine de travail basée sur la répétition espacée (logiciel Anki) et gestion du rythme."
+    }
+  },
+  {
+    "domain": "Économie, Gestion & Finance",
+    "faculties": ["IHEC Carthage", "ISG Tunis", "FSEG Sfax", "ESCT"],
+    "semester1_subjects": [
+      "Microéconomie I (Théorie du consommateur et du producteur)",
+      "Comptabilité financière et générale (Système Comptable Tunisien)",
+      "Mathématiques appliquées et calcul matriciel",
+      "Introduction au Management et aux organisations",
+      "Statistiques descriptives et probabilités"
+    ],
+    "summer_prep_recommendations": {
+      "week_1_2": "Révision du calcul différentiel et des fonctions à plusieurs variables appliquées à l'optimisation économique.",
+      "week_3_4": "Découverte des principes de la comptabilité générale (bilan, comptes de résultat, écritures débit/crédit).",
+      "week_5_6": "Maîtrise d'Excel pour l'analyse financière (formules avancées, tableaux croisés dynamiques) et lecture de la presse économique tunisienne."
+    }
+  }
+]
