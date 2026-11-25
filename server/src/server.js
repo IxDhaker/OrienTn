@@ -10,6 +10,8 @@ import recommendationRoutes from './routes/recommendationRoutes.js';
 import aiRoutes from './routes/aiRoutes.js';
 import umlRoutes from './routes/umlRoutes.js';
 
+import authRoutes from './routes/authRoutes.js';
+import adminRoutes from './routes/adminRoutes.js';
 dotenv.config();
 
 const app = express();
@@ -28,6 +30,8 @@ app.use('/api/score', scoreRoutes);
 app.use('/api/faculties', facultyRoutes);
 app.use('/api/recommendations', recommendationRoutes);
 app.use('/api/ai', aiRoutes);
+app.use('/api/auth', authRoutes);
+app.use('/api/admin', adminRoutes);
 
 // Routes Modèle StarUML (Conformité 100% diagramme de classes)
 app.use('/api/uml', umlRoutes);

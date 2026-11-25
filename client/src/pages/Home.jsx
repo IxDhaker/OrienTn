@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from '../components/GuardedLink';
 import { Calculator, MapPin, Sparkles, Building2, Award, ArrowRight, CheckCircle2, BookOpen } from 'lucide-react';
 
 export default function Home() {
@@ -111,48 +111,7 @@ export default function Home() {
         })}
       </div>
 
-      {/* Tech Stack & Team Info */}
-      <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-8 text-white">
-        <div className="max-w-3xl">
-          <span className="text-xs font-bold uppercase tracking-widest text-red-400">Architecture du Projet</span>
-          <h2 className="text-2xl sm:text-3xl font-black mt-2 mb-4 text-white">
-            Architecture Moderne : MERN Stack + Python RAG
-          </h2>
-          <p className="text-slate-300 text-sm leading-relaxed mb-6">
-            Ce projet est conçu pour une équipe de 4 étudiants conformément au cahier des charges :
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-            <div className="flex items-start space-x-3 bg-white/5 p-3.5 rounded-xl border border-white/10">
-              <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
-              <div>
-                <span className="font-semibold text-white">Étudiant 1 : Base de Données</span>
-                <p className="text-xs text-slate-400">Modèles MongoDB (Mongoose), seed des universités, scores minimaux et clubs.</p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-3 bg-white/5 p-3.5 rounded-xl border border-white/10">
-              <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
-              <div>
-                <span className="font-semibold text-white">Étudiant 2 : Frontend & Cartographie</span>
-                <p className="text-xs text-slate-400">Interface React, géolocalisation Leaflet de la Tunisie, fiches facultés.</p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-3 bg-white/5 p-3.5 rounded-xl border border-white/10">
-              <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
-              <div>
-                <span className="font-semibold text-white">Étudiant 3 : API Backend Node.js / Express</span>
-                <p className="text-xs text-slate-400">Calculateur de score officiel du Bac, moteur de filtrage et recommandations.</p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-3 bg-white/5 p-3.5 rounded-xl border border-white/10">
-              <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
-              <div>
-                <span className="font-semibold text-white">Étudiant 4 : Module IA / RAG en Python</span>
-                <p className="text-xs text-slate-400">FastAPI, LangChain, vector store et génération du Summer Prep personnalisé.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      
       </div>
-    </div>
   );
 }

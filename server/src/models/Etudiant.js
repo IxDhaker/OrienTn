@@ -28,6 +28,11 @@ const etudiantSchema = new mongoose.Schema(
       lowercase: true,
       default: null
     },
+    // Hash du mot de passe (jamais renvoyé par défaut)
+    motDePasseHash: {
+      type: String,
+      select: false
+    },
     // Associations navigables
     resultatsScore: [
       {

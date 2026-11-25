@@ -12,6 +12,9 @@ const normalizeFaculty = (f) => {
   const sections = (plain.offresFormation || []).map((o) => {
     const fil = o.filiere || {};
     return {
+      _id: o._id,
+      year: o.annee,
+      seuil: o.scoreSeuil,
       code: fil.code || 'SEC',
       name: fil.nom || 'Formation',
       domain: fil.domaine || 'Général',
@@ -24,7 +27,8 @@ const normalizeFaculty = (f) => {
   });
 
   // Mapper vieAssociative vers clubs pour le frontend
-  const clubs = (plain.vieAssociative || []).map((v) => ({
+    const clubs = (plain.vieAssociative || []).map((v) => ({
+    _id: v._id,
     name: v.nom,
     category: v.type,
     description: v.description,
